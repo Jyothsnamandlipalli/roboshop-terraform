@@ -14,7 +14,7 @@ resource "aws_instance" "frontend" {
   vpc_security_group_ids = [data.aws_security_group.allow-all.id]
 
   tags = {
-    Name = frontend
+    Name = "frontend"
   }
 }
 
