@@ -1,9 +1,8 @@
-
-resource "aws_instance" "web" {
-  ami           = "ami-0b5a2b5b8f2be4ec2"
+resource "aws_instance" "frontend" {
+  ami           = "ami-0b5a2b5b8f2be4ec2"         #this is centos-8 ami id
   instance_type = "t3.micro"
 
   tags = {
-    Name = "HelloWorld"
+    Name = "frontend"
   }
 }
